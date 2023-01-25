@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function(){
+                let correctButton = document.querySelector('#correct');
+                let incorrectButton = document.querySelector('#incorrect');
+
+                correctButton.addEventListener('click', function();
+                    correctButton.style.backgroundColor = 'green';
+                )
+                incorrectButton.addEventListener('click', function();
+                    incorrectButton.style.backgroundColor = 'red';
+                )
+            });
+
+            function incorrect()
+                {
+                    document.querySelector('#Q1').textContent = "Incorrect";
+                    document.querySelector('#Q1').style.fontcolor = "red";
+                }
+            function correct()
+                {
+                    document.querySelector('#Q1').textContent = "Correct!";
+                    document.querySelector('#Q1').styleCOnent = "green";
+                }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <p id='message';></p>
+                <!-- TODO: Add multiple choice question here -->
+<<<<<<< HEAD
+                <h3>Who answers your prayers?</h3>
+                <p id="message";></p>
+                <button class="incorrect";>God (Christian)</button>
+                <button class="incorrect";>A sharp knife and a steady hand</button>
+                <button id="correct";>Azathoth / Cthulu</button>
+                <button class="incorrect";>Tefnut</button>
+                <button class="incorrect";>Only minor deities and animistic spirits hear prayers</button>
+=======
+                <h3 id = Q1;>Who answers your prayers?</h3>
+                <button id="Incorrect";>God (Christian)</button>
+                <button id="Incorrect";>A sharp knife and a steady hand</button>
+                <button id="Correct";>Azathoth / Cthulu</button>
+                <button id="Incorrect";>Tefnut</button>
+                <button id="Incorrect";>Only minor deities and animistic spirits hear prayers and we've driven them away</button>
+>>>>>>> 7208c665665b677642f9fe208585b41492c45750
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What! Is you favourite colour?!</h3>
+                <p id="answer";></p>
+                <input type="text"; placeholder="Type your response...";>
+                <button id="checkanswer";>Well?</button>
+            </div>
+        </div>
+    </body>
+</html>

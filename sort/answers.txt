@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Faster sorting time than sort3 in a sorted list, indicating it has simply gone through the list once and stopped
+
+sort2 uses: Merge Sort
+
+How do you know?: fastest sorting time
+
+sort3 uses: Selection Sort
+
+How do you know?: longest sorting time, showing that each item of the list had to be analyzed rather than compared as in done in Bubble sort and merge sort.

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1"/>
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.IK5OmUURd2E.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo932JinkSJHK92WgVjIV-Jwwyu3Rw/cb=gapi.loaded_0" nonce="_pqE-zGPUZ7iYHq475gqfw" async=""></script>
+        <title>Advanced Search</title>
+        <style>
+            h2 {
+                margin-top: -10%;
+                margin-left: 10%;
+            }
+            input[type=search]{
+                width: 50%;
+                margin: 5px 0;
+                padding: 8px;
+                background-image: url("icons8-search-16.png");
+                background-position: 10px 8px;
+                background-repeat: no-repeat;
+                padding-left: 30px;
+
+            }
+            #advanced {
+                margin-left: 15%;
+            }
+            label {
+                display: inline-block;
+                width: 200px;
+            }
+            #search {
+                background: #4C8bf5;
+                color: white;
+                border: blue;
+                font-size: 16px;
+                padding: 10px 24px;
+                border-radius: 5px;
+                float: right;
+                margin-right: 30%;
+                opacity: 0.9;
+                transition: 0.3s;
+            }
+            #search:hover {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul class="nav-button">
+                    <li><a href="image_search.html">Image Search</a></li>
+                    <li><a href="index.html">Back To Google</a></li>
+                </ul>
+            </nav>
+        </header>
+            <div class="logo-div">
+                <img class="logo" src="Untitled.jpg" alt="google">
+            </div>
+            <h2>Find Pages With:</h2>
+            <div>
+                <form id="advanced" action="https://www.google.com/search" method="GET">
+                    <label for="All">...All These Words: </label> <input type="search" id="All"></br>
+                    <label for="Exact">...This Exact Word or Phrase: </label> <input type="search" id="Exact"></br>
+                    <label for="Any">...Any Of These Words: </label> <input type="search" id="Any"></br>
+                    <label for="None">...None of These Words: </label> <input type="search" id="None"></br>
+                    <button id="search" type="submit">Advanced Search</button>
+                </form>
+            </div>
+    </body>
+</html>

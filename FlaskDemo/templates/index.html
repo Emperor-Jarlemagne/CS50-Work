@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Number of Shares</th>
+            <th scope="col">Current Price of Individual Stock</th>
+            <th scope="col">Total Value</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in database %}
+            <tr>
+                <th scope="row">1</th>
+                <td>{{ row["symbol"] }}</td>
+                <td>{{ row["shares"] }}</td>
+                <td>{{ row["price"] | usd }}</td>
+                <td>{{ row["shares"] * row["price"] | usd }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+            <th scope="row">Total Cash Available: {{ row["cash"] | usd }}</th>
+            </tr>
+            <tr>
+            <th scope="row">Grand Total: {{ row["cash"] + (row["shares"] * row["price"]) | usd }}</th>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

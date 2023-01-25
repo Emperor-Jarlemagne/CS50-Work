@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content='initial-scale=1', width='device-width'>
+        <title>Stimulus! Response!</title>
+        <style>
+            @media (min-width: 600px){
+                body{
+                    background-color: red;
+                }
+            }
+            @media (max-width: 599px){
+                body{
+                    background-color: grey;
+                }
+            }
+            #container{
+                display: flex;
+                flex-wrap; wrap;
+            }
+            #container > div {
+                color: wheat;
+                font-size: 25px;
+                margin: 20px;
+                padding: 20px;
+                width: 200px;
+            }
+            #grid{
+                background-color: orchid;
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 35px;
+                grid-row-gap: 35px;
+                grid-template-columns: 200px 200px auto; <!-- Third column is automatically sized -->
+            }
+            .grid-items{
+                background-color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div> 1. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 2. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 3. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 4. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 5. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 6. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 7. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 8. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 9. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 10. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 11. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+            <div> 12. "sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+        </div>
+        <div id="grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+        </div>
+
+    </body>
+</html>

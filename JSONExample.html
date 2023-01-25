@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>shows</title>
+    </head>
+    <body>
+        <input autocomplete="off" autofocus placeholder ="Query" type="search">
+
+        <ul></ul>
+        #JSON script
+        <script>
+            let input = document.querySelector('input');
+            input.addEventListener('input', async function() {
+                let response = await fetch('/search?q=' + input.value);
+                let shows = await response.json();
+                for html = '';
+                for (let id in shows) {
+                    let title = shows[id].title.replace('<', '&lt;').replace('&', '&amp;');
+                    html += '<li>' + title '</li>';
+                }
+                document.querySelector('ul').innerHTML = html;
+            });
+        </script>
+    </body>
+
+</html>
